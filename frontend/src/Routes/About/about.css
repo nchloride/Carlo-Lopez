@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+.about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Bebas Neue', cursive;
+    height: 80vh;
+    
+}
+.about__photo{
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 0 0pt 3pt black;
+    height: 20rem;
+}
+.about__details{
+    padding: 20px;
+    box-shadow: 0 0 3pt 1pt black;
+    background-color: rgb(255, 138, 43);
+    text-align: center;
+}
+.about__details h1{
+    cursor: pointer;
+}
+.about__details >h1{
+    font-weight: lighter;
+}
+.about__profile{
+    position: relative;
+}
+.about__arrow{
+    cursor:pointer;
+    position: absolute;
+    bottom: -6%;
+    animation: moveUpDown 1s infinite;
+}
+@keyframes moveUpDown {
+    0%{
+        bottom: -6%;
+    }
+    50%{
+        bottom: -8%;
+    }
+    100%{
+        bottom: -6%;
+    }
+}
+.about__profile>img{
+    height: 20rem;
+    width: 20rem;
+}
