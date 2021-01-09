@@ -51,8 +51,11 @@
         position: absolute;
         left: -100%;
         overflow: hidden;
-        background-color: cornsilk;
+        background-color: rgb(26, 26, 26);
         z-index: 99;
+    }
+    .link{
+        color: whitesmoke;
     }
     .navigation__bar--open{
         transition: 1s;
