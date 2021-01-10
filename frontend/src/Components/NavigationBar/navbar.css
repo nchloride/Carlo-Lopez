@@ -6,7 +6,7 @@
     justify-content: flex-end;
     align-items: center;
     height: 10vh;
-    background-color: transparent;
+    background-color: black;
 }
 .links{
     display: flex;
@@ -14,16 +14,16 @@
     width: 60vw;
 }
 .link{
-    color: black;
+    color: white;
     text-decoration: none;
     font-family: 'Economica', sans-serif;
     font-size: 25px;
 }
 .link--clicked{
     transition: .1s ease-in-out;
-    color: rgb(7, 7, 7);
+    
     font-size: 30px;
-    text-shadow: 0 0 5px #aaaaaa;
+    text-shadow: 0 0 10px #ffffff;
 }
 .links>li{
     list-style:none;
