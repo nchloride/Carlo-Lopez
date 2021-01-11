@@ -21,7 +21,6 @@
 }
 .link--clicked{
     transition: .1s ease-in-out;
-    
     font-size: 30px;
     text-shadow: 0 0 10px #ffffff;
 }

@@ -4,6 +4,7 @@ import Home from "./Routes/Home/Home";
 import About from "./Routes/About/About";
 import "./App.css"
 import {motion,AnimatePresence} from "framer-motion";
+import Projects from "./Routes/Projects/Projects";
 function App() {
   return (
     <div className="App">
@@ -12,6 +13,7 @@ function App() {
           <Switch>
             <Route path="/" exact component={Home}/>
             <Route path="/about" component={About}/>
+            <Route path="/projects" component={Projects}/>
           </Switch>
       </Router>
     </div>
