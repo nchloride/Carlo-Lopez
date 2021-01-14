@@ -2,6 +2,7 @@ import React from 'react';
 import {motion} from "framer-motion";
 import rantapp from "../../Components/projects-picture/rantapp.png";
 import carolyngullon from "../../Components/projects-picture/carolyngullon.png";
+import filiisipan from "../../Components/projects-picture/fili-isipan.jpg";
 import "./projects.css";
 import ProjectContainer from './ProjectContainer';
 const Projects = () => {
@@ -17,7 +18,8 @@ const Projects = () => {
         name:"Fili-isipan",
         description:"An open world cross-word puzzle game",
         link:"https://drive.google.com/file/d/1Qhd3B7g9lHHIGFp_ts15Coq3DxUp3x8A/view?usp=sharing",
-        isDeveloped:true
+        isDeveloped:true,
+        picture:filiisipan
     },
     {
         name:"Carolyn Baking",
@@ -25,9 +27,10 @@ const Projects = () => {
         repo:"https://github.com/nchloride/personal-cooking-web",
         picture:carolyngullon,
         isDeveloped:false
-    }]
+    }
+]
     return (
-        <motion.div className="projects">
+        <motion.div className="projects" id="Projects" >
             <motion.h1 className="projects__title">Projects</motion.h1>
             <motion.div className="projects__container">
               {projects.map((project,id)=>(<ProjectContainer isDeveloped={project.isDeveloped} delay={id} key={id} picture={project.picture} link={project.link} name={project.name} repo={project.repo} description={project.description}/>))}

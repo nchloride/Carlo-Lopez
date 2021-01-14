@@ -56,7 +56,7 @@
     .link{
         color: whitesmoke;
     }
-    .navigation__bar--open{
+    .navigation__bar-open{
         transition: 1s;
         left: 0%;
     }

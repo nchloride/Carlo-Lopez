@@ -12,7 +12,7 @@ const ProjectContainer = ({name,description,link,repo, delay,picture,isDeveloped
                 <p>{description}</p>
                 {link && <a href={link} rel="noreferrer" target="_blank">Link</a>}
                 {repo && <a href={repo} rel="noreferrer" target="_blank">Github repo</a>}
-                {!isDeveloped && <h1>Currently working on</h1>}
+                {!isDeveloped && <h1 className="status">Currently working on</h1>}
             </motion.div>
         </motion.div>
     )

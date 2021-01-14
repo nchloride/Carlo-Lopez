@@ -19,10 +19,10 @@ const AboutInformation = () => {
         grow:{scale:1}
     };
     return (
-        <motion.div className="about__information"  layout initial={{opacity:0}} transition={{delay:.5, ease:'easeIn'}} animate={{opacity:1}} >
-            <motion.p className="introduction" variants={variants} initial="shrink" transition={{delay:1}} animate="grow" >
+        <motion.div className="about__information" initial={{opacity:0}} transition={{delay:.5, ease:'easeIn'}} animate={{opacity:1}} exit={{opacity:0}}>
+            <motion.p   className="introduction" variants={variants} initial="shrink" transition={{delay:1}} animate="grow" >
                 A computer science graduate from STI college and also an aspiring Software Developer,
-                I love doing both frontend and backend. I discovered my love for coding when I was in 1st year,
+                I love doing fullstack development. I discovered my love for coding when I was in 1st year,
                 <br></br>"The more I create something, the more I got into it"
             </motion.p>
             <motion.div className="skills">
@@ -32,7 +32,7 @@ const AboutInformation = () => {
                 </motion.div>
             </motion.div>
             <motion.div>
-                <Link to="/projects" className="projects__link">
+                <Link to={{pathname:"https://github.com/nchloride?tab=repositories"}} target="_blank" className="projects__link">
                     <motion.div initial={{x:-5}} animate={{x:0}} transition={{repeat:Infinity,duration:1}}>
                         <ArrowForwardIcon/>
                     </motion.div>

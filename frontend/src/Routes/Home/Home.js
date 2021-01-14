@@ -1,10 +1,11 @@
 import React from 'react';
-import "./home.css"
+import "./home.css";
 import {motion} from "framer-motion";
+import HomeIntroduction from './Introduction';
 const Home = () => {
     return (
-        <motion.div initial={{x:-100}} animate={{x:0}} className="home">
-            <h1>Home</h1>
+        <motion.div className="home" >
+            <HomeIntroduction/>
         </motion.div>
     )
 }
