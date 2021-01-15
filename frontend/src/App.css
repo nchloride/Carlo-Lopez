@@ -5,3 +5,9 @@ html{
 }
 .App{
 }
+::-webkit-scrollbar{
+  background-color: gray;
+}
+::-webkit-scrollbar-thumb{
+  background-color: black;
+}

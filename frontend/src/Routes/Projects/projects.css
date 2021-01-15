@@ -42,6 +42,12 @@
     font-size: 1rem;
     border: 1px solid black;
 }
+.project__details h1{
+    font-family: 'Bebas Neue', cursive;
+}
+.project__details p {
+    font-family: 'Teko', sans-serif;
+}
 .project__details{
     display: block;
     position: absolute;

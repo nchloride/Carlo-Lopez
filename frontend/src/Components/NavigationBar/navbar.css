@@ -2,7 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Economica:ital,wght@1,700&display=swap');
 .navigation__bar{
     display: flex;
-    width: 100vw;
     justify-content: flex-end;
     align-items: center;
     height: 10vh;
@@ -47,7 +46,7 @@
         transition: 1s;
         width: 100vw;
         height: 100vh;
-        position: absolute;
+        position: fixed;
         left: -100%;
         overflow: hidden;
         background-color: rgb(26, 26, 26);
@@ -66,7 +65,7 @@
     }
 /* NavigationButton */
     .navigation__button{
-        position: absolute;
+        position: fixed;
         display: flex;
         z-index: 100;
     }
