@@ -5,6 +5,7 @@ import About from "./Routes/About/About";
 import "./App.css";
 import {motion,AnimatePresence} from "framer-motion";
 import Projects from "./Routes/Projects/Projects";
+import Footer from "./Components/Footer/Footer";
 function App() {
 
   return (
@@ -17,6 +18,7 @@ function App() {
               <Route path="/about" children={<About />}/>
               <Route path="/projects" children={<Projects/>}/>
             </Switch>
+        <Footer/>
     </div>
   );
 }

@@ -41,7 +41,7 @@
     height: 5px;
 }
 
-@media screen and (max-width:425px){
+@media screen and (max-width:700px){
     .navigation__bar{
         transition: 1s;
         width: 100vw;

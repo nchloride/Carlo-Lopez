@@ -6,10 +6,10 @@ const NavigationButton = ({setNavOpen}) => {
         <motion.button className="navigation__button"
          drag 
          dragConstraints={{
-            top:-50,
-            left:-50,
-            right:100,
-            bottom:100
+            top:10,
+            left:10,
+            right:10,
+            bottom:10
         }} onClick={toggleNav}>
             <div className="line"></div>
             <div className="line"></div>
