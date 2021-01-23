@@ -41,9 +41,10 @@
 @media screen and (max-width:900px){
     .home__intro{
         flex-direction: column;
+        height: 100vh;
     }
     .tagline{
-        font-size: 3rem;
+        font-size: 2rem;
         text-align: center;
     }
     .home__intro>img{
@@ -55,6 +56,7 @@
     font-family: 'Bebas Neue', cursive;
     font-size: 5rem;
     margin: 50px;
+
 }
 .home__timeline{
     display: flex;
@@ -115,9 +117,44 @@
     border-right: 20px solid rgb(123, 123, 123);
     border-bottom: 10px solid transparent;
 }
-/* .timeline:nth-child(even) .timeline__dot:nth-child(1){
-    display: none;
-} */
+.home__timeline_title{
+    text-align: center;
+    font-size: 4rem;
+}
+@media screen and (max-width:1000px){
+    .timeline:nth-child(even){
+        flex-direction: row;
+        right:0;
+    }
+    .timeline:nth-child(even) .timeline__dot{
+        border-left: none;
+    }
+    .timeline:nth-child(even) .timeline__dot:nth-child(1){
+        display: block;
+        border-right: 20px solid rgb(123, 123, 123);
+        border-left: none;
+    }
+    .timeline:nth-child(even) .timeline__dot:nth-child(3){
+        display: none;
+    }
+    .timeline{
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+        margin: 0%;
+        margin-bottom: 20px;
+    }
+    .timeline__record > .timeline__dot{
+        display: none;
+    }
+    .timeline:nth-child(even) .timeline__record h1{
+        text-align: center;
+    }
+    .home__timeline{
+        width: 100%;
+        background-color: transparent;
+    }
+}
 /* Miscellaneous */
 .home__misc{
     background-color: gray;
@@ -167,37 +204,16 @@
 .service p {
     font-family: 'Teko', sans-serif;
 }
-@media screen and (max-width:1000px){
-    .timeline:nth-child(even){
-        flex-direction: row;
-        right:0;
-    }
-    .timeline:nth-child(even) .timeline__dot{
-        border-left: none;
-    }
-    .timeline:nth-child(even) .timeline__dot:nth-child(1){
-        display: block;
-        border-right: 20px solid rgb(123, 123, 123);
-        border-left: none;
-    }
-    .timeline:nth-child(even) .timeline__dot:nth-child(3){
-        display: none;
-    }
-    .timeline{
-        width: 100%;
-        justify-content: center;
-        text-align: center;
-        margin: 0%;
-        margin-bottom: 20px;
-    }
-    .timeline__record > .timeline__dot{
-        display: none;
-    }
-    .timeline:nth-child(even) .timeline__record h1{
+@media screen and (max-width:400px){
+    .home_misc_title{
+        font-size: 4.5rem;
         text-align: center;
     }
-    .home__timeline{
-        width: 100%;
-        background-color: transparent;
+    .service>img{
+        width: 100px;
+    }
+    .service{
+        font-size: 1.5rem;
+        text-align: center;
     }
 }
