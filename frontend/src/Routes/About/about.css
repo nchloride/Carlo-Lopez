@@ -3,7 +3,6 @@
     grid-template-columns: repeat(auto-fit,minmax(320px, 500px));
     grid-template-rows: repeat(auto-fit,minmax(500px, 200px));
     justify-content: space-around;
-    width: 100vw;
     height: 80vh;
 }
 .about{

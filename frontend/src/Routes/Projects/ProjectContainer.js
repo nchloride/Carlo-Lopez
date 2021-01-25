@@ -4,8 +4,16 @@ const ProjectContainer = ({name,description,link,repo, delay,picture,isDeveloped
     delay = delay * .10;
     const [isHovered,setIsHovered] = useState(false);
     const toggleHover =() =>setIsHovered(prevData=>!prevData);
+    const variant = {
+        scale:{
+            scale:0
+        },
+        scaleUp:{
+            scale:1
+        }
+    }
     return (
-        <motion.div layout className="project" initial={{scale:0}} transition={{delay}} onMouseEnter={toggleHover} onMouseLeave={toggleHover} animate={{scale:1}}>
+        <motion.div layout className="project" variants={variant} initial="scale" transition={{delay}} onMouseEnter={toggleHover} onMouseLeave={toggleHover} animate="scaleUp">
             {picture && <img src={picture} alt={name}></img>}
             <motion.div className="project__details" animate={{opacity:isHovered?1:0}}>
                 <h1>{name}</h1>
