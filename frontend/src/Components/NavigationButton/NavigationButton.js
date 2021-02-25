@@ -1,13 +1,20 @@
-import React from 'react'
-
+import React from 'react';
+import {motion} from "framer-motion";
 const NavigationButton = ({setNavOpen}) => {
     const toggleNav = ()=> setNavOpen(prevData=>!prevData)
     return (
-        <button className="navigation__button" onClick={toggleNav}>
+        <motion.button className="navigation__button"
+         drag 
+         dragConstraints={{
+            top:10,
+            left:10,
+            right:10,
+            bottom:10
+        }} onClick={toggleNav}>
             <div className="line"></div>
             <div className="line"></div>
             <div className="line"></div>
-        </button>
+        </motion.button>
     )
 }
 

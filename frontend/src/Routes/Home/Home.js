@@ -1,9 +1,15 @@
 import React from 'react';
+import "./home.css";
 import {motion} from "framer-motion";
+import HomeIntroduction from './HomeIntroduction';
+import HomeTimeLine from './HomeTimeLine';
+import HomeMisc from './HomeMisc';
 const Home = () => {
     return (
-        <motion.div initial={{x:-100}} animate={{x:0}} exit={{x:100}}>
-            <h1>Home</h1>
+        <motion.div className="home" >
+            <HomeIntroduction/>
+            <HomeTimeLine/>
+            <HomeMisc/>
         </motion.div>
     )
 }
